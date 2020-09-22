@@ -1,0 +1,8 @@
+.about-container{
+    display: flex;
+    flex-direction: row;
+    line-height: 500px;
+    border: 2px solid red;
+    justify-content: space-around;
+    background-color: cornsilk;
+}
