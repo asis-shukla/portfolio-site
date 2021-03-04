@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.left-pane{
+    background-color: #007586;
+    width: 100%;
+    padding: 30px;
+}
+.right-pane{
+    background-color:#007486a9;
+    width: 100%;
+    padding: 30px;
+}
