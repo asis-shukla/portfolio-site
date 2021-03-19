@@ -1,8 +1,6 @@
 .about-container{
     display: flex;
     flex-direction: row;
-    line-height: 500px;
-    border: 2px solid red;
+    line-height: 200px;
     justify-content: space-around;
-    background-color: cornsilk;
 }
