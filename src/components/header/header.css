@@ -1,13 +1,13 @@
-.flex-container{
-    display: flex;
-    background: cornflowerblue;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    color: white;
-    line-height: 50px;
+.header-wrapper {
+  display: flex;
+  background: gray;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  color: white;
+  line-height: 50px;
 }
 
-.flex-items{
-    font-size: x-large;
+.flex-items {
+  font-size: x-large;
 }
