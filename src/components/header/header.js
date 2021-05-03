@@ -2,20 +2,31 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./header.css";
 export function Header() {
-  //    const menuItems = ['About', 'Blogs', 'Contact Me', 'Projects', 'Skills', 'Download File']
+  const changeBackGroundColour = () => {
+    console.log("bcc");
+  };
+  const menuItems = [
+    "About",
+    "Blogs",
+    "Contact",
+    "Projects",
+    "Skills",
+    "Download",
+  ];
+  const menu = menuItems.map((m) => (
+    <Col
+      onClick={() => alert(m + "clicked")}
+      onFocus={() => changeBackGroundColour()}
+    >
+      {" "}
+      {m}
+    </Col>
+  ));
   return (
-    // <div className="flex-container">
-    //   <div className="flex-items">About</div>
-    //   <div className="flex-items">Blogs</div>
-    //   <div className="flex-items">Contact Me</div>
-    //   <div className="flex-items">Projects</div>
-    //   <div className="flex-items">Skills</div>
-    //   <div className="flex-items">Download File</div>
-    // </div>
-    <Container fluid="md">
-      <Row>
-        <Col>1 of 1</Col>
-      </Row>
-    </Container>
+    <div className="mainMenu">
+      <Container fluid="sm">
+        <Row>{menu}</Row>
+      </Container>
+    </div>
   );
 }
